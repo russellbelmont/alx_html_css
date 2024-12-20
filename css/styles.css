@@ -1,61 +1,73 @@
-/* In your css/styles.css file */
 
-/* Header styles */
-header {
-    background-color: #333; /* Example background color */
-    padding: 20px;
-    color: white;
-}
-
-nav img {
-    width: 150px; /* Adjust logo size */
-}
-
-nav ul {
-    list-style-type: none;
+/* General styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif; /* Use the Figma font */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Quote section styles */
+section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 60px 100px; /* Adjust the padding to match the design in Figma */
+    background-color: #f9f9f9; /* Set a background color for the section */
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+section div {
+    flex: 1; /* Let both divs take equal space */
+    margin-right: 20px; /* Add margin between the two divs */
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+/* Image styles */
+section div img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    max-width: 400px; /* Set a max width to ensure the image doesn't stretch */
+    margin-bottom: 20px; /* Add space below the image */
 }
 
-/* First Section styles */
-main section:first-of-type {
-    padding: 50px;
-    background-color: #f9f9f9;
+/* Blockquote styles */
+section div blockquote {
+    font-size: 24px; /* Adjust font size to match the Figma design */
+    font-style: italic;
+    color: #555; /* Set the text color */
+    margin-bottom: 20px; /* Add space below the blockquote */
+    padding: 20px; /* Add padding around the quote */
+    background-color: #fff; /* Set a background color for the quote */
+    border-left: 5px solid #4CAF50; /* Add a left border to match the Figma style */
+    max-width: 600px; /* Set a max width */
+    margin: 0 auto; /* Center the quote */
 }
 
-main section:first-of-type h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+/* Name and role styles */
+section div h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Set text color */
+    margin-bottom: 5px;
 }
 
-main section:first-of-type span {
-    display: block;
-    font-size: 24px;
-    margin-bottom: 10px;
+section div p {
+    font-size: 16px;
+    color: #888; /* Set a lighter text color */
+    margin-top: 0;
 }
 
-main section:first-of-type button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Stack the two divs on smaller screens */
+        padding: 30px 20px; /* Adjust padding for mobile */
+    }
 
-main section:first-of-type button:hover {
-    background-color: #45a049;
-}
+    section div {
+        margin-right: 0; /* Remove the margin between divs */
+        margin-bottom: 20px; /* Add space between divs */
+    }
 
+    section div img {
+        max-width: 100%; /* Ensure the image fits the mobile screen */
+    }
+}
