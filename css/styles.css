@@ -1,132 +1,61 @@
-/* General Reset */
-* {
+/* In your css/styles.css file */
+
+/* Header styles */
+header {
+    background-color: #333; /* Example background color */
+    padding: 20px;
+    color: white;
+}
+
+nav img {
+    width: 150px; /* Adjust logo size */
+}
+
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #fff; /* Adjust this color based on Figma */
-}
-
-/* Header Styling */
-header {
-    background-color: #fff; /* Adjust based on Figma */
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for header */
-}
-
-header nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    justify-content: space-around;
 }
 
-header nav img {
-    max-width: 150px; /* Adjust logo size based on Figma */
-    height: auto;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-}
-
-header nav ul li {
-    margin-left: 30px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #333; /* Adjust based on Figma */
-    font-size: 16px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #f03c5e; /* Adjust hover color based on Figma */
-}
-
-/* First Section Styling */
-section {
-    padding: 80px 0; /* Add spacing around the section */
-    background-color: #f7f7f7; /* Adjust background color based on Figma */
-}
-
-section div {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-section h1 {
-    font-size: 48px; /* Adjust based on Figma */
-    font-weight: 700;
-    color: #333; /* Adjust based on Figma */
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-section span {
+nav ul li {
     display: inline-block;
-    font-size: 18px; /* Adjust based on Figma */
-    font-weight: 400;
-    color: #777; /* Adjust based on Figma */
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-section button {
-    padding: 15px 30px;
-    background-color: #f03c5e; /* Adjust based on Figma */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-section button:hover {
-    background-color: #e02d49; /* Adjust hover color based on Figma */
-}
-
-/* Second Part of First Section - Image & Testimonial Styling */
-section div:last-child {
-    width: 45%;
-}
-
-section div:last-child img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Adjust border radius based on Figma */
-}
-
-section blockquote {
+nav ul li a {
+    color: white;
+    text-decoration: none;
     font-size: 18px;
-    font-style: italic;
-    color: #444;
-    margin-top: 20px;
-    line-height: 1.5;
 }
 
-section h3 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #333;
-    margin-top: 20px;
+/* First Section styles */
+main section:first-of-type {
+    padding: 50px;
+    background-color: #f9f9f9;
 }
 
-section p {
-    font-size: 16px;
-    color: #777;
+main section:first-of-type h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
+
+main section:first-of-type span {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main section:first-of-type button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+main section:first-of-type button:hover {
+    background-color: #45a049;
+}
+
