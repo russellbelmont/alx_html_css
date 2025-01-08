@@ -1,0 +1,79 @@
+/* Animations */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* What We Do Section */
+section.bg-white.text-gray-900.py-20 .flex .text-center {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+section.bg-white.text-gray-900.py-20 .flex .text-center:nth-child(1) {
+  animation-delay: 0s;
+}
+
+section.bg-white.text-gray-900.py-20 .flex .text-center:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+section.bg-white.text-gray-900.py-20 .flex .text-center:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+section.bg-white.text-gray-900.py-20 .flex .text-center:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+/* Hover effect for icons in "What we do..." */
+section.bg-white.text-gray-900.py-20 .flex .text-center:hover i {
+  animation: bounce 0.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+/* Our Results Section */
+section.bg-cover.bg-center.text-white.py-20 .flex .pentagon {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+section.bg-cover.bg-center.text-white.py-20 .flex .pentagon:nth-child(1) {
+  animation-delay: 0s;
+}
+
+section.bg-cover.bg-center.text-white.py-20 .flex .pentagon:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+section.bg-cover.bg-center.text-white.py-20 .flex .pentagon:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+section.bg-cover.bg-center.text-white.py-20 .flex .pentagon:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+/* Hover effect for statistics boxes in "Our results" */
+section.bg-cover.bg-center.text-white.py-20 .flex .pentagon:hover {
+  animation: bounce 0.5s ease-in-out infinite;
+  transform-origin: center center;
+}
